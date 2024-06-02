@@ -49,7 +49,9 @@ cd SecurePass
 Ensure you have Python and the `zxcvbn` library installed. If not, you can install the required dependencies using pip:
 
 ```bash
-pip install -r requirements.txt
+chmod +x requirements.sh
+
+./requirements.sh
 ```
 
 #### Step 4: Run the Script
