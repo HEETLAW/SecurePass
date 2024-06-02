@@ -1,18 +1,17 @@
-# Update package list
-sudo apt update
+#!/bin/bash
 
-# Install Python 3 if not already installed
-sudo apt install python3
+# Update package lists
+sudo apt-get update
 
 # Install pip for Python 3
-sudo apt install python3-pip
+sudo apt-get install -y python3-pip
 
-# Install Tkinter for GUI
-sudo apt install python3-tk
+# Install tkinter for Python 3
+sudo apt-get install -y python3-tk
 
-# Install zxcvbn library using pip
-pip3 install zxcvbn
+# Install necessary Python packages
+pip3 install -r requirements.txt
 
-# (Optional) Verify the installations
-python3 --version
-pip3 --version
+# Verify installation
+python3 -m tkinter -c "print('tkinter is installed')"
+pip3 show zxcvbn
