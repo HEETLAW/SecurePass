@@ -1,96 +1,82 @@
 # SecurePass
 
-**StealthPixels: Advanced Image Encryption Tool**
+## SecurePass: Advanced Password Management Tool
 
-This advanced version of the Image Encryption program, named **StealthPixels**, includes the following features:
+SecurePass is an advanced password management tool designed to ensure the strength and security of user passwords. This tool provides real-time password assessment, secure password generation, and comprehensive feedback on password strength and entropy. Built with a user-friendly graphical interface, SecurePass helps users create and manage robust passwords to enhance their cybersecurity posture.
 
-### Key Management
-- **Set Encryption Key:** Allows users to set an encryption key within the range of 0 to 255.
+### Key Features:
 
-### Image Encryption/Decryption
-- **Encrypt Image:** Supports encryption of images using a specified key.
-- **Decrypt Image:** Supports decryption of images using the same key used for encryption.
+1. **Real-Time Password Assessment:**
+   - Assesses the strength of passwords based on length, uppercase and lowercase letters, digits, and special characters.
+   - Provides instant feedback and strength ratings from "Very Weak" to "Very Strong".
 
-### Exception Handling
-- **Error Handling:** Includes error handling for file operations and user inputs to enhance robustness.
+2. **Common Password Check:**
+   - Checks against a list of common passwords to prevent the use of easily guessable passwords.
 
-### CLI Interaction
-- **User-Friendly Interface:** Offers a command-line interface for users to perform image encryption, decryption, and key management.
+3. **Password Generation:**
+   - Generates strong, random passwords with a mix of characters for enhanced security.
 
-### File Integrity Verification
-- **Image Loading Validation:** Ensures the selected image file exists and is valid.
+4. **Entropy Calculation:**
+   - Calculates and displays the entropy of the password, providing an additional measure of password strength.
 
-### Documentation
-- **Descriptive Comments and Docstrings:** Improves code readability and maintainability.
+5. **User-Friendly Interface:**
+   - Easy-to-use graphical interface for password entry, real-time assessment, and feedback.
+   - Suggestions for generating strong passwords.
 
-This advanced version enhances the functionality and usability of the image encryption tool, making it suitable for real-world tasks, including secure image storage and transmission.
+6. **History Tracking:**
+   - Maintains a history of recent password assessments for user reference.
 
-### How to Get and Use StealthPixels
+### How to Get and Use SecurePass
 
 #### Step 1: Clone the Repository
-- **Open Terminal:** Open your terminal (Command Prompt, PowerShell, or any terminal you use).
-- **Clone the Repository:** Use the `git clone` command followed by the URL of your GitHub repository.
+
+Open Terminal: Open your terminal (Command Prompt, PowerShell, or any terminal you use).
+
+Clone the Repository: Use the git clone command followed by the URL of your GitHub repository.
 
 ```bash
-git clone https://github.com/HEETLAW/StealthPixels.git
+git clone https://github.com/HEETLAW/SecurePass.git
 ```
 
 #### Step 2: Navigate to the Repository Directory
+
 ```bash
-cd StealthPixels
+cd SecurePass
 ```
 
 #### Step 3: Ensure Required Dependencies are Installed
-Ensure you have Python and the `Pillow` library installed. If not, you can install `Pillow` using pip:
+
+Ensure you have Python and the `zxcvbn` library installed. If not, you can install the required dependencies using pip:
 
 ```bash
-pip install pillow
+pip install -r requirements.txt
 ```
 
 #### Step 4: Run the Script
-You can now run your image encryption tool. Assuming your main script is named `StealthPixels.py`, you would run:
+
+You can now run your SecurePass tool. Assuming your main script is named `SecurePass.py`, you would run:
 
 ```bash
-python StealthPixels.py
+python SecurePass.py
 ```
 
-### Step 5: Using the Tool
-Follow the prompts provided by the script to use the various functionalities:
+#### Step 5: Using the Tool
 
-#### Load Image
-1. **Select (1)** to load an image.
-2. **Enter the path** of the image to load.
+Follow the graphical user interface to use the various functionalities:
 
-#### Set Encryption Key
-1. **Select (2)** to set the encryption key.
-2. **Enter the key value** (between 0 and 255).
+- **Password Entry:** Enter a password to receive real-time assessment, feedback, and entropy calculation.
+- **Generate Strong Password:** Click the button to generate a strong, random password.
+- **View Feedback:** Review the feedback provided for password improvements.
 
-#### Encrypt Image
-1. **Select (3)** to encrypt the loaded image.
-2. **Enter the output path** for the encrypted image.
+### Example Usage
 
-#### Decrypt Image
-1. **Select (4)** to decrypt an encrypted image.
-2. **Enter the path** of the encrypted image.
-3. **Enter the output path** for the decrypted image.
+- **Real-Time Assessment:**
+  - Enter a password to receive immediate feedback on its strength and suggestions for improvement.
+  
+- **Generate Strong Password:**
+  - Click the "Generate Strong Password" button to get a suggestion for a strong, randomly generated password.
 
-#### Quit
-1. **Select (5)** to quit the application.
+- **Entropy Calculation:**
+  - View the entropy calculation to understand the strength of the password in bits.
 
-### Example Commands
-
-#### To encrypt an image:
-1. **Load Image:** 
-    - Enter the path of the image to load: `path/to/image.jpg`
-2. **Set Encryption Key:** 
-    - Enter the encryption key (0-255): `123`
-3. **Encrypt Image:** 
-    - Enter the output path for encrypted image: `path/to/encrypted_image.jpg`
-
-#### To decrypt an image:
-1. **Load Image:** 
-    - Enter the path of the image to load: `path/to/image.jpg`
-2. **Set Encryption Key:** 
-    - Enter the encryption key (0-255): `123`
-3. **Decrypt Image:** 
-    - Enter the output path for decrypted image: `path/to/decrypted_image.jpg`
+SecurePass enhances password security by providing users with the tools and information needed to create strong, secure passwords, essential for protecting sensitive information in today's digital world.
