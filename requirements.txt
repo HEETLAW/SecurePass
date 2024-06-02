@@ -1,0 +1,18 @@
+# Update package list
+sudo apt update
+
+# Install Python 3 if not already installed
+sudo apt install python3
+
+# Install pip for Python 3
+sudo apt install python3-pip
+
+# Install Tkinter for GUI
+sudo apt install python3-tk
+
+# Install zxcvbn library using pip
+pip3 install zxcvbn
+
+# (Optional) Verify the installations
+python3 --version
+pip3 --version
